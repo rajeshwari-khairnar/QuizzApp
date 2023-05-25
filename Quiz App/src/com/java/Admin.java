@@ -3,12 +3,32 @@ package com.java;
 import java.util.Scanner;
 
 public class Admin {
+	
+	public void validation() {
+		Scanner sc = new Scanner(System.in);
+		String adminPass =sc.nextLine();
+		if(adminPass.equals("pass@123")) {
+			
+			view();
+		}
+		else {
+			System.out.println("Invalid Password, please try again!");
+			System.exit(01);
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
 public void view() {
 	System.out.println("Welcome Admin!");
 	
 	
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter 1 add que 2.add user"); 
+	System.out.println("1: add que\n2:add user"); 
 	int adminChoice =sc.nextInt();
 	
 	switch(adminChoice) {
@@ -22,6 +42,14 @@ public void view() {
 		que1.addUsers();
 		break;
 	}
+	
+	
+
+	
+	
+	
+	
+	
 	
 }
 	

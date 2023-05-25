@@ -47,6 +47,21 @@ public class Question {
 
 			ps.execute();
 			System.out.println("Question added Successfully!");
+			System.out.println("Press 1 for Exit \n Press 2 for adding another question");
+			int choice = sc.nextInt();
+			
+			switch(choice) {
+			case 1:
+				System.exit(1);
+				break;
+			case 2:
+				addQue();
+				break;
+			
+			}
+			//add another que
+			//go to homepage
+			
 			ps.close();
 			conn.close();
 
@@ -83,5 +98,6 @@ public class Question {
 		}
 
 	}
+	
 
 }
